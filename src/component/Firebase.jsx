@@ -3,7 +3,7 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "@firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBU7_jD-ciC5kb1K9w4864NmcCWKYtGc5w",
+  apiKey: "",
   authDomain: "red-bank-81590.firebaseapp.com",
   projectId: "red-bank-81590",
   storageBucket: "red-bank-81590.appspot.com",
