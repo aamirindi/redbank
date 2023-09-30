@@ -1,0 +1,104 @@
+.all-requests-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 2px solid #dadada;
+  border-top-left-radius: 5vw;
+  border-top-right-radius: 5vw;
+}
+
+.all-requests-container .header h1 {
+  font-family: sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1vw;
+  margin-top: 2vw;
+  transition: all ease-in-out 400ms;
+}
+
+.all-requests-container .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.all-requests-container .cards__item {
+  flex: 0 0 calc(50% - 2vw);
+  padding: 1vw;
+  margin: 0vw;
+}
+
+.all-requests-container .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5vw;
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: all ease-in-out 400ms;
+}
+
+.all-requests-container .card:hover {
+  box-shadow: 10px 5px 5px lightgray;
+  transform: translateY(-10px);
+}
+
+.all-requests-container .card__content {
+  display: flex;
+  flex-direction: column;
+  padding: 3vw;
+}
+
+.all-requests-container .card__title {
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.all-requests-container .card__title span {
+  color: crimson;
+  font-weight: 600;
+}
+
+.all-requests-container .card__text {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+.all-requests-container .btn-all-req {
+  padding: 10px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all ease-in-out 400ms;
+  background-color: black;
+  color: white;
+}
+
+.all-requests-container .btn-all-req:hover {
+  background-color: crimson;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .all-requests-container .header h1 {
+    margin: 5vw;
+  }
+
+  .all-requests-container .cards__item {
+    flex: 0 0 100%;
+    margin-bottom: 2vw;
+  }
+}

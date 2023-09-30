@@ -1,0 +1,157 @@
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+.register .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  padding: 3vw;
+}
+.register .left .header {
+  font-size: clamp(1rem, 0.7714rem + 1.1429vw, 1.8rem);
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  padding-bottom: 5px;
+}
+.register .left .header p {
+  font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
+  color: gray;
+}
+.register .left .input-group {
+  display: flex;
+  padding: 9px;
+}
+.register .left .input-group input {
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid lightslategray;
+  width: 100%;
+  padding: 8px;
+}
+.register .left .input-group input::placeholder {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.register .left .radio-group {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin: 3px 0 0 0;
+}
+.register .left .input-group .dob {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  padding: 6px;
+}
+.register .left .radio-group .duo {
+  display: flex;
+  flex-direction: column;
+}
+.register .left .radio-group label {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+.register .left .radio-group > * {
+  padding: 0 10px;
+}
+.register .left .button button {
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
+  margin-top: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #e5e5e5;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  border: none;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.register .left .button button:hover {
+  box-shadow: 10px 5px 5px gray;
+  transform: translateY(-5px);
+  background-position: right center;
+  color: #fff;
+}
+.register .right {
+  width: 50%;
+}
+.register .right img {
+  width: 100%;
+  border-radius: 50%;
+  mix-blend-mode: lighten;
+}
+
+@media (max-width: 840px) {
+  .register {
+    display: block;
+  }
+  .register .left {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+  .register .right {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .register {
+    display: block;
+  }
+  .register .left {
+    width: 100%;
+  }
+  .register .right {
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .register {
+    display: block;
+    width: 100%;
+  }
+  .register .left {
+    width: 100%;
+  }
+  .register .right {
+    width: 100%;
+  }
+  .register .left .select-group > * {
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 325px) {
+  .register {
+    display: block;
+    width: 100%;
+  }
+  .register .left {
+    width: 100%;
+  }
+  .register .right {
+    width: 100%;
+  }
+}
