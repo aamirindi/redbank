@@ -1,15 +1,18 @@
 
 # RedBank
 
+
  Description:
 
 RedBank is a dynamic, full-stack web application developed with a focus on blood donation and saving lives. Leveraging Firebase for authentication and Firestore for database management, RedBank is designed to facilitate the seamless exchange of blood donations. The project utilizes React Router DOM for efficient routing, CSS for styling, and React Leaflet for map integration.
+
 
 Key Features:
 
 Real-time Blood Donation Requests: RedBank enables users to create and view real-time blood donation requests from nearby donors. This feature ensures quick and timely responses during critical situations.
 User-Friendly Interface: The platform offers an intuitive and user-friendly interface, making it easy for both donors and those in need to connect and coordinate donations.
 Comprehensive Dashboard: The main dashboard provides a responsive navbar for navigation, displaying the user's name, nearby donor locations on an interactive map, an easy-to-use blood donation form, and an 'All Requests' section for staying informed about ongoing donation campaigns.
+
 
 Project Structure:
 
