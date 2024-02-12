@@ -97,6 +97,7 @@ function Update_User() {
       />
       <Navbar />
       <div className="update-user-profile">
+        <h1>User Profile</h1>
         <div className="user-data">
           <ul>
             <li>
@@ -129,7 +130,10 @@ function Update_User() {
             trigger={<button className="btn-edit"> Edit </button>}
             modal
             nested
-            closeOnDocumentClick={false}>
+            contentStyle={{
+              width: "300px",
+              maxWidth: "500px",
+            }}>
             {(close) => {
               closePopup = close;
               return (
@@ -139,6 +143,7 @@ function Update_User() {
                   </button>
                   <h1 className="header"> Edit Details </h1>
                   <hr />
+                  <br />
                   <div className="content-edit">
                     <form onSubmit={handleSubmit}>
                       <div className="input">
@@ -150,6 +155,7 @@ function Update_User() {
                           onChange={handleInputChange}
                         />
                       </div>
+                      <br />
                       <div className="input">
                         <input
                           type="number"
@@ -159,6 +165,7 @@ function Update_User() {
                           onChange={handleInputChange}
                         />
                       </div>
+                      <br />
                       <div className="input-dob">
                         <label htmlFor="dob" className="dob">
                           Date of birth :
@@ -172,6 +179,8 @@ function Update_User() {
                           onChange={handleInputChange}
                         />
                       </div>
+                      <br />
+
                       <div className="selection">
                         <label htmlFor="bloodgroup">Blood group : </label>
                         <select
@@ -189,6 +198,7 @@ function Update_User() {
                           <option value="AB-">AB-</option>
                         </select>
                       </div>
+                      <br />
                       <div className="selection">
                         <label htmlFor="gender">Gender : </label>
                         <select
@@ -200,6 +210,7 @@ function Update_User() {
                           <option value="Female">Female</option>
                         </select>
                       </div>
+                      <br />
                       <div className="selection">
                         <label htmlFor="recovered">Covid Recovered : </label>
                         <select
@@ -211,6 +222,7 @@ function Update_User() {
                           <option value="No">No</option>
                         </select>
                       </div>
+                      <br />
                       <button className="button-edit" type="submit">
                         Edit
                       </button>
@@ -224,7 +236,11 @@ function Update_User() {
             trigger={<button className="btn-delete"> Delete </button>}
             modal
             nested
-            closeOnDocumentClick={false}>
+            contentStyle={{
+              width: "300px",
+              maxWidth: "700px",
+              backgroundColor: "white",
+            }}>
             {(close) => {
               closePopup = close;
               return (
@@ -240,9 +256,6 @@ function Update_User() {
                   <div className="actions">
                     <button className="button-delete" onClick={handleDelete}>
                       Yes, Delete
-                    </button>
-                    <button className="button-cancel" onClick={close}>
-                      Cancel
                     </button>
                   </div>
                 </div>

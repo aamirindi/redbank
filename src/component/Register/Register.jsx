@@ -42,9 +42,7 @@ function Register({ isAuth }) {
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    const confirm = window.confirm(
-      "Please verify the details it cannot be changed!"
-    );
+    const confirm = window.confirm("Please verify the details!");
     if (confirm) {
       await addDoc(formRef, formData);
       toast.success("Details saved successfully :)", {

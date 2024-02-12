@@ -10,6 +10,17 @@
   border-top-left-radius: 5vw;
   border-top-right-radius: 5vw;
   font-family: "Poppins";
+  background: rgb(255, 124, 124);
+  background: linear-gradient(
+    204deg,
+    rgba(255, 124, 124, 1) 0%,
+    rgba(255, 255, 255, 1) 40%
+  );
+  & h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-top: 10px;
+  }
 
   & button {
     cursor: pointer;
@@ -18,9 +29,10 @@
   & .user-data {
     width: 500px;
     max-width: 300px;
-    padding: 10px 30px;
     margin-top: 50px;
+    padding: 10px 30px;
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
     & ul {
       & li {
         display: flex;
@@ -44,9 +56,47 @@
     margin-top: 50px;
 
     & button {
-      font-size: 1.2rem;
-      padding: 6px 15px;
-      border: none;
+      appearance: button;
+      background-color: #000;
+      background-image: none;
+      border: 1px solid #000;
+      border-radius: 4px;
+      box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+      box-sizing: border-box;
+      cursor: pointer;
+      display: inline-block;
+      font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 20px;
+      margin: 0 5px 10px 0;
+      overflow: visible;
+      padding: 12px 40px;
+      text-align: center;
+      text-transform: none;
+      touch-action: manipulation;
+      user-select: none;
+      -webkit-user-select: none;
+      vertical-align: middle;
+      white-space: nowrap;
+
+      &:focus {
+        text-decoration: none;
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      &:active {
+        box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+        outline: 0;
+      }
+
+      &:not([disabled]):active {
+        box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+        transform: translate(2px, 2px);
+      }
     }
     & .btn-edit {
       background-color: black;
@@ -60,23 +110,59 @@
 }
 
 .modal {
+  width: 100%;
   font-size: 12px;
   font-family: "Poppins";
 
   & .button-edit {
-    margin: 5px;
-    padding: 5px 15px;
-    border: none;
-    font-size: 1rem;
-    background-color: black;
-    color: white;
+    appearance: button;
+    background-color: #000;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #fff;
     cursor: pointer;
+    display: inline-block;
+    font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    &:focus {
+      text-decoration: none;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:active {
+      box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+      outline: 0;
+    }
+
+    &:not([disabled]):active {
+      box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+      transform: translate(2px, 2px);
+    }
   }
 }
 
 .modal > .header {
   width: 100%;
-  font-size: 18px;
+  font-size: 1.5rem;
   text-align: center;
   padding: 5px;
 }
@@ -111,6 +197,8 @@
 .content-edit {
   /* background-color: aqua; */
   & form {
+    /* background-color: red; */
+    width: 100%;
     font-size: 1rem;
     display: flex;
     justify-content: center;
@@ -119,40 +207,117 @@
     /* border: 1px solid; */
 
     & .input {
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 5px;
       & input {
-        padding: 3px 5px;
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
+        appearance: none;
+        outline: none;
+        border-bottom: 2px solid #e91e63;
+        background: rgba(#e91e63, 0.2);
+        border-radius: 10px;
+        padding: 0.4em;
+        color: black;
+
+        &::placeholder {
+          font-family: "Poppins";
+        }
+        &:focus {
+          outline: none;
+        }
       }
     }
     & .input-dob {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      margin-top: 5px;
-      border-bottom: 1px solid;
+      border: none;
       gap: 0.5rem;
-
+      width: 100%;
+      & input {
+        padding: 5px 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #fff;
+      }
       & label {
         color: crimson;
         font-weight: 600;
       }
     }
     & .selection {
-      border-bottom: 1px solid;
-      margin-top: 5px;
-      padding-bottom: 5px;
+      width: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      gap: 0.5rem;
 
+      & select {
+        padding: 5px 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #fff;
+      }
       & label {
         color: crimson;
         font-weight: 600;
       }
+    }
+  }
+  & p {
+    font-family: "Poppins";
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+.actions {
+  & .button-delete {
+    appearance: button;
+    background-color: crimson;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    color: white;
+
+    &:focus {
+      text-decoration: none;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:active {
+      box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+      outline: 0;
+    }
+
+    &:not([disabled]):active {
+      box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+      transform: translate(2px, 2px);
     }
   }
 }

@@ -1,8 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Inter:wght@500;800&family=Poppins&family=Roboto:wght@100&family=Source+Serif+4:opsz,wght@8..60,300&family=Ubuntu:wght@300&display=swap");
+
 .centered-container {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 4vw;
+  min-height: 100vh;
+  background: rgb(255, 198, 124);
+  background: rgb(255, 124, 124);
+  background: linear-gradient(
+    360deg,
+    rgba(255, 124, 124, 1) 0%,
+    rgba(255, 255, 255, 1) 40%
+  );
+  .sign-in {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    & h1 {
+      font-family: "Poppins";
+      font-size: 3rem;
+      position: absolute;
+      top: 5vh;
+      & span {
+        color: crimson;
+      }
+    }
+  }
 }
 
 .centered-image {
@@ -11,46 +37,46 @@
 }
 
 .btn {
-  margin-top: 20px;
-  appearance: none;
-  background-image: radial-gradient(
-    100% 100% at 100% 0,
-    #5adaff 0,
-    #5468ff 100%
-  );
-  border: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  font-family: "JetBrains Mono", monospace;
-  height: 48px;
-  line-height: 1;
-  list-style: none;
-  padding-left: 16px;
-  padding-right: 16px;
   text-decoration: none;
-  transition: box-shadow 0.15s, transform 0.15s;
-  user-select: none;
+  appearance: button;
+  background-color: black;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  overflow: visible;
+  padding: 10px 20px;
+  text-align: center;
+  line-height: 30px;
+  text-transform: none;
   touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
   white-space: nowrap;
-  will-change: box-shadow, transform;
-  font-size: 18px;
-}
+  color: white;
 
-.btn:focus {
-  box-shadow: #3d61fb 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3d61fb 0 -3px 0 inset;
-}
+  &:focus {
+    text-decoration: none;
+  }
 
-.btn:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3d61fb 0 -3px 0 inset;
-  transform: translateY(-2px);
-}
+  &:hover {
+    text-decoration: none;
+  }
 
-.btn:active {
-  box-shadow: #3d61fb 0 3px 7px inset;
-  transform: translateY(2px);
+  &:active {
+    box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+    outline: 0;
+  }
+
+  &:not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+  }
 }

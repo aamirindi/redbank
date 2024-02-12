@@ -8,11 +8,11 @@
   height: 100vh;
   margin: 0;
   font-family: "Poppins";
-  background: rgb(255, 198, 124);
+  background: rgb(255, 124, 124);
   background: linear-gradient(
-    186deg,
-    rgba(255, 198, 124, 1) 0%,
-    rgba(255, 255, 255, 1) 60%
+    204deg,
+    rgba(255, 124, 124, 1) 0%,
+    rgba(255, 255, 255, 1) 40%
   );
 }
 .register .left {
@@ -83,31 +83,49 @@
 }
 .register .left .button button {
   width: 100%;
-  background-image: linear-gradient(
-    to right,
-    #ff512f 0%,
-    #f09819 51%,
-    #ff512f 100%
-  );
-  margin-top: 10px;
-  padding: 15px 45px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: #e5e5e5;
-  box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
-  display: block;
-  border: none;
+  text-decoration: none;
+  appearance: button;
+  background-color: black;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+  font-size: 20px;
   font-weight: 400;
-  font-size: 1rem;
-}
-.register .left .button button:hover {
-  box-shadow: 10px 5px 5px gray;
-  transform: translateY(-5px);
-  background-position: right center;
-  color: #fff;
+  overflow: visible;
+  padding: 5px 10px;
+  text-align: center;
+  line-height: 30px;
+  margin: 10px 0;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  color: white;
+
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:active {
+    box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+    outline: 0;
+  }
+
+  &:not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+  }
 }
 .register .right {
   width: 50%;

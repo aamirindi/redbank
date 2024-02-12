@@ -9,13 +9,20 @@
   border-top: 2px solid #dadada;
   border-top-left-radius: 5vw;
   border-top-right-radius: 5vw;
+  background: rgb(255, 124, 124);
+  background: linear-gradient(
+    204deg,
+    rgba(255, 124, 124, 1) 0%,
+    rgba(255, 255, 255, 1) 40%
+  );
 }
 .single-requests-container .header h1 {
-  font-family: sans-serif;
+  font-family: "Poppins";
   font-weight: 600;
   letter-spacing: 2px;
+  font-size: 2.5rem;
   text-transform: uppercase;
-  margin-bottom: 1vw;
+  text-align: center;
   margin-top: 2vw;
   transition: all ease-in-out 400ms;
 }

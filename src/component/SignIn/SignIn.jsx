@@ -42,17 +42,22 @@ export default function SignIn({ setIsAuth }) {
 
   return (
     <div className="centered-container">
-      <img
-        className="centered-image animation slide_up"
-        src={logo}
-        alt="SignIn logo"
-        height={400}
-        width={400}
-      />
+      <div className="sign-in">
+        <h1 className="animation fade_in">
+          Red<span>Bank</span>
+        </h1>
+        <img
+          className="centered-image animation "
+          src={logo}
+          alt="SignIn logo"
+          height={400}
+          width={400}
+        />
 
-      <button className="btn animation slide_up" onClick={googleClick}>
-        SignIn using Google
-      </button>
+        <button className="btn animation slide_up" onClick={googleClick}>
+          SignIn using Google
+        </button>
+      </div>
     </div>
   );
 }
