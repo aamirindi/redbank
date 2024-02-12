@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Inter:wght@500;800&family=Poppins&family=Roboto:wght@100&family=Source+Serif+4:opsz,wght@8..60,300&family=Ubuntu:wght@300&display=swap");
+
 .footer {
   position: relative;
+  font-family: "Poppins";
   width: 100%;
-  background: #dc143b;
+  background: #3586ff;
   min-height: 100px;
   padding: 20px 50px;
   display: flex;
@@ -27,6 +29,7 @@
 .footer .about .dev {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .footer .about .dev .social {
   margin-top: 3vw;
@@ -47,7 +50,7 @@
   left: 0;
   width: 100%;
   height: 100px;
-  background: url("../../public/assets/wave1.png");
+  background: url("../../public/assets/waveog.png");
   background-size: 1000px 100px;
 }
 

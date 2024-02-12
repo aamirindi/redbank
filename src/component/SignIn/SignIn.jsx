@@ -23,6 +23,7 @@ export default function SignIn({ setIsAuth }) {
   const getUser = (uid) => {
     const collectionRef = collection(db, "user");
     const q = query(collectionRef, where("author.id", "==", uid));
+    // console.log(q);
 
     getDocs(q)
       .then((querySnapshot) => {

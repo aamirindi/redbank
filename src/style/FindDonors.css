@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Inter:wght@500;800&family=Poppins&family=Roboto:wght@100&family=Source+Serif+4:opsz,wght@8..60,300&family=Ubuntu:wght@300&display=swap");
 .main-find-donors {
   display: flex;
   align-items: center;
@@ -11,8 +12,8 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  margin-top: 3vw;
-  width: 50%;
+  margin: 3vw;
+  width: 40%;
   padding: 3vw;
 }
 .main-find-donors .left .header {
@@ -105,9 +106,9 @@
     display: block;
   }
   .main-find-donors .left {
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
+    border: none;
+    width: 100%;
+    margin: 20px 0;
   }
   .main-find-donors .right {
     width: 100%;
@@ -118,6 +119,8 @@
     display: block;
   }
   .main-find-donors .left {
+    margin: 20px 5px;
+    border: none;
     width: 100%;
   }
 }

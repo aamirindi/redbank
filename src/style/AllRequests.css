@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Inter:wght@500;800&family=Poppins&family=Roboto:wght@100&family=Source+Serif+4:opsz,wght@8..60,300&family=Ubuntu:wght@300&display=swap");
 .all-requests-container {
   display: flex;
   align-items: center;
@@ -6,6 +7,7 @@
   border-top: 2px solid #dadada;
   border-top-left-radius: 5vw;
   border-top-right-radius: 5vw;
+  font-family: "Poppins";
 }
 
 .all-requests-container .header h1 {
@@ -37,16 +39,10 @@
   margin: 5vw;
   background-color: white;
   border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
   transition: all ease-in-out 400ms;
-}
-
-.all-requests-container .card:hover {
-  box-shadow: 10px 5px 5px lightgray;
-  transform: translateY(-10px);
 }
 
 .all-requests-container .card__content {

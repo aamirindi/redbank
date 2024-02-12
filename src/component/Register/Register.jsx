@@ -4,7 +4,7 @@ import { getAuth } from "firebase/auth";
 import { db } from "../Firebase";
 import { collection, addDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
-import bg from "../Register/bl4.jpg";
+import bg from "../Register/1_KJACFKJ0GKtnhgR7OmlPFA.gif";
 import useAnimation from "../../hooks/useAnimation";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -78,6 +78,9 @@ function Register({ isAuth }) {
         pauseOnHover
         theme="light"
       />
+      <div className="right animation slide_right">
+        <img src={bg} alt="" />
+      </div>
       <form onSubmit={submitHandler} className="left animation slide_left">
         <div className="header">
           <h1>Enter your details,</h1>
@@ -309,10 +312,6 @@ function Register({ isAuth }) {
           <button>Submit</button>
         </div>
       </form>
-
-      <div className="right animation slide_right">
-        <img src={bg} alt="" />
-      </div>
     </div>
   );
 }

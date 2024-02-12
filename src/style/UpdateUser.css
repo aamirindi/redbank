@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Inter:wght@500;800&family=Poppins&family=Roboto:wght@100&family=Source+Serif+4:opsz,wght@8..60,300&family=Ubuntu:wght@300&display=swap");
+
+.update-user-profile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px solid #dadada;
+  border-top-left-radius: 5vw;
+  border-top-right-radius: 5vw;
+  font-family: "Poppins";
+
+  & button {
+    cursor: pointer;
+  }
+
+  & .user-data {
+    width: 500px;
+    max-width: 300px;
+    padding: 10px 30px;
+    margin-top: 50px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+    & ul {
+      & li {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+        list-style: none;
+
+        & span {
+          font-weight: 600;
+          color: crimson;
+        }
+      }
+    }
+  }
+
+  & .edit-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 50px;
+
+    & button {
+      font-size: 1.2rem;
+      padding: 6px 15px;
+      border: none;
+    }
+    & .btn-edit {
+      background-color: black;
+      color: white;
+    }
+    & .btn-delete {
+      background-color: crimson;
+      color: white;
+    }
+  }
+}
+
+.modal {
+  font-size: 12px;
+  font-family: "Poppins";
+
+  & .button-edit {
+    margin: 5px;
+    padding: 5px 15px;
+    border: none;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.modal > .header {
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content-edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+
+.content-edit {
+  /* background-color: aqua; */
+  & form {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid; */
+
+    & .input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5px;
+      & input {
+        padding: 3px 5px;
+      }
+    }
+    & .input-dob {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5px;
+      border-bottom: 1px solid;
+      gap: 0.5rem;
+
+      & label {
+        color: crimson;
+        font-weight: 600;
+      }
+    }
+    & .selection {
+      border-bottom: 1px solid;
+      margin-top: 5px;
+      padding-bottom: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+
+      & label {
+        color: crimson;
+        font-weight: 600;
+      }
+    }
+  }
+}

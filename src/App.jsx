@@ -7,6 +7,7 @@ import Find_Donors from "./component/Dashboard/Find_Donors";
 import All_Requests from "./component/Dashboard/All_Requests";
 import Nearby_Requests from "./component/Dashboard/Nearby_Requests";
 import Single_Request from "./component/Dashboard/Single_Request";
+import Update_User from "./component/Dashboard/Update_User";
 
 export default function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
@@ -26,13 +27,13 @@ export default function App() {
             path="/dashboard"
             element={<Dashboard isAuth={isAuth} setIsAuth={setIsAuth} />}
           />
-          <Route exact path="/finddonor" element={<Find_Donors />} />
           <Route
             exact
             path="/allrequests"
             isAuth={isAuth}
             element={<All_Requests />}
           />
+          <Route exact path="/updateuser/:id" element={<Update_User />} />
           <Route exact path="/finddonors" element={<Find_Donors />} />
           <Route exact path="/nearbyrequests" element={<Nearby_Requests />} />
           <Route exact path="/singlerequest/:id" element={<Single_Request />} />

@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { db } from "../Firebase";
 import { getDoc, doc } from "firebase/firestore";
-import NavBar from "./NavBar";
+import NavBar from "./Navbar";
 import "../../style/SingleRequests.css";
 import useAnimation from "../../hooks/useAnimation";
 
 export default function Single_Request() {
-  //   console.log(useParams());
+  // console.log(useParams());
   const { id } = useParams();
   const [data, setData] = useState({});
   //   const colRef = collection(db, "findDonors");

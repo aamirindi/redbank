@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Inter:wght@500;800&family=Poppins&family=Roboto:wght@100&family=Source+Serif+4:opsz,wght@8..60,300&family=Ubuntu:wght@300&display=swap");
+
 .register {
   display: flex;
   align-items: center;
@@ -5,6 +7,13 @@
   width: 100%;
   height: 100vh;
   margin: 0;
+  font-family: "Poppins";
+  background: rgb(255, 198, 124);
+  background: linear-gradient(
+    186deg,
+    rgba(255, 198, 124, 1) 0%,
+    rgba(255, 255, 255, 1) 60%
+  );
 }
 .register .left {
   display: flex;
@@ -15,41 +24,47 @@
 }
 .register .left .header {
   font-size: clamp(1rem, 0.7714rem + 1.1429vw, 1.8rem);
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  padding-bottom: 5px;
+  font-family: "Poppins";
+  padding-bottom: 15px;
 }
 .register .left .header p {
   font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
-  color: gray;
+  color: rgb(61, 61, 61);
 }
 .register .left .input-group {
   display: flex;
   padding: 9px;
+  justify-content: space-between;
 }
 .register .left .input-group input {
   font-size: 1rem;
   border: none;
   border-bottom: 1px solid lightslategray;
   width: 100%;
+  font-weight: 300;
   padding: 8px;
 }
 .register .left .input-group input::placeholder {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.2rem;
+  font-family: "Poppins";
+  font-size: 1rem;
   color: black;
+}
+.register .left .input-group input:focus {
+  outline: none;
 }
 
 .register .left .radio-group {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding: 5px;
   margin: 3px 0 0 0;
 }
 .register .left .input-group .dob {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Poppins";
   width: 100%;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border-radius: 5px;
   padding: 6px;
 }
@@ -58,8 +73,8 @@
   flex-direction: column;
 }
 .register .left .radio-group label {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.2rem;
+  font-family: "Poppins";
+  font-size: 1rem;
   font-weight: 600;
   padding-bottom: 5px;
 }
@@ -98,8 +113,8 @@
   width: 50%;
 }
 .register .right img {
+  z-index: 2;
   width: 100%;
-  border-radius: 50%;
   mix-blend-mode: lighten;
 }
 
