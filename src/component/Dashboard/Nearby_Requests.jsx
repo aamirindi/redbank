@@ -3,7 +3,7 @@ import "../../style/NearbyRequests.css";
 import { MapContainer, TileLayer, Marker, Tooltip } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-import { db } from "../Firebase";
+import { db } from "../../Firebase";
 import { onSnapshot, collection } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 

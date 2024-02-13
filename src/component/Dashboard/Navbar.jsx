@@ -2,7 +2,7 @@ import "../../style/Navbar.css";
 import { getAuth, signOut } from "firebase/auth";
 import { collection, getDocs } from "firebase/firestore";
 import { useNavigate, Link } from "react-router-dom";
-import { db } from "../Firebase";
+import { db } from "../../Firebase";
 import { useState, useEffect } from "react";
 
 export default function Navbar() {

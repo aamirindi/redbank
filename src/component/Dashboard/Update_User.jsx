@@ -2,7 +2,7 @@ import Navbar from "../Dashboard/Navbar";
 import "../../style/UpdateUser.css";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { db } from "../Firebase";
+import { db } from "../../Firebase";
 import { getDoc, doc, updateDoc, deleteDoc } from "firebase/firestore";
 import useAnimation from "../../hooks/useAnimation";
 import Popup from "reactjs-popup";

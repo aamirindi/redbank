@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../../style/Register.css";
 import { getAuth } from "firebase/auth";
-import { db } from "../Firebase";
+import { db } from "../../Firebase";
 import { collection, addDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 import bg from "../Register/1_KJACFKJ0GKtnhgR7OmlPFA.gif";

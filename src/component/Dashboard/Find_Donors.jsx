@@ -2,7 +2,7 @@ import "../../style/FindDonors.css";
 import { useState, useEffect } from "react";
 import "../../style/Register.css";
 import { getAuth } from "firebase/auth";
-import { db } from "../Firebase";
+import { db } from "../../Firebase";
 import { collection, addDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";

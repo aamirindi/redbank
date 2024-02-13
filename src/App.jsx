@@ -11,6 +11,7 @@ import Update_User from "./component/Dashboard/Update_User";
 
 export default function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
+  // console.log(import.meta.env.VITE_REACT_APP_FIREBASE_AUTH_DOMAIN);
 
   return (
     <>

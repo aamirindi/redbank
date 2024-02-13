@@ -2,9 +2,8 @@ import "../../style/SignIn.css";
 import logo from "./logo.png";
 import { useNavigate } from "react-router-dom";
 import { signInWithPopup } from "firebase/auth";
-import { auth, provider } from "../Firebase";
 import useAnimation from "../../hooks/useAnimation";
-import { db } from "../Firebase";
+import { db, auth, provider } from "../../Firebase";
 import { collection, getDocs, where, query } from "firebase/firestore";
 
 // eslint-disable-next-line react/prop-types

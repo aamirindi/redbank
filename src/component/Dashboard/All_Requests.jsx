@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
 import "../../style/AllRequests.css";
 import { getAuth } from "firebase/auth";
-import { db } from "../Firebase";
+import { db } from "../../Firebase";
 import { onSnapshot, collection, doc, deleteDoc } from "firebase/firestore";
 import { useState, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
