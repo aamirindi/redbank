@@ -2,7 +2,7 @@ import useAnimation from "../../hooks/useAnimation";
 import "../../style/Dashboard.css";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import Navbar from "./Navbar";
-import Carousel from "../Carousel/Carousel";
+import Carousels from "../Carousel/Carousel";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Footer from "./Footer";
@@ -39,7 +39,7 @@ export default function Dashboard({ isAuth, setIsAuth }) {
             <span>Blood</span> Facts
           </h4>
           <div className="carousel ">
-            <Carousel />
+            <Carousels />
           </div>
         </div>
       </div>
