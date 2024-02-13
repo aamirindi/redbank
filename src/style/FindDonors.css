@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Inter:wght@500;800&family=Poppins&family=Roboto:wght@100&family=Source+Serif+4:opsz,wght@8..60,300&family=Ubuntu:wght@300&display=swap");
+
 .main-find-donors {
   display: flex;
   align-items: center;
@@ -6,19 +7,27 @@
   border-top: 2px solid #dadada;
   border-top-left-radius: 5vw;
   border-top-right-radius: 5vw;
+  font-family: "Poppins";
+  background: rgb(255, 124, 124);
+  background: linear-gradient(
+    204deg,
+    rgba(255, 124, 124, 1) 0%,
+    rgba(255, 255, 255, 1) 40%
+  );
 }
 .main-find-donors .left {
-  border: 1px solid gray;
-  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  margin: 3vw;
-  width: 40%;
-  padding: 3vw;
+  margin: 2vw;
+  width: 400px;
+  padding: 20px;
 }
 .main-find-donors .left .header {
-  font-size: clamp(1rem, 0.7714rem + 1.1429vw, 1.8rem);
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 1.2rem;
   padding-bottom: 5px;
 }
 .main-find-donors .left .header span {
@@ -40,9 +49,12 @@
   padding: 8px;
 }
 .main-find-donors .left .input-group input::placeholder {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Poppins";
   font-size: 1.2rem;
   color: black;
+}
+.main-find-donors .left .input-group input:focus {
+  outline: none;
 }
 
 .main-find-donors .left .radio-group {
@@ -52,7 +64,7 @@
   margin: 3px 0 0 0;
 }
 .main-find-donors .left .input-group .dob {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Poppins";
   width: 100%;
   font-weight: 600;
   font-size: 1.2rem;
@@ -64,7 +76,7 @@
   flex-direction: column;
 }
 .main-find-donors .left .radio-group label {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Poppins";
   font-size: 1.2rem;
   font-weight: 600;
   padding-bottom: 5px;
@@ -74,40 +86,58 @@
 }
 .main-find-donors .left .button button {
   width: 100%;
-  background-image: linear-gradient(
-    to right,
-    #ff512f 0%,
-    #f09819 51%,
-    #ff512f 100%
-  );
-  margin-top: 10px;
-  padding: 15px 45px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: #e5e5e5;
-  box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
-  display: block;
-  border: none;
+  text-decoration: none;
+  appearance: button;
+  background-color: black;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+  font-size: 20px;
   font-weight: 400;
-  font-size: 1rem;
-}
-.main-find-donors .left .button button:hover {
-  box-shadow: 10px 5px 5px gray;
-  transform: translateY(-5px);
-  background-position: right center;
-  color: #fff;
+  overflow: visible;
+  padding: 10px 20px;
+  text-align: center;
+  line-height: 30px;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin-top: 10px;
+  color: white;
+
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:active {
+    box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+    outline: 0;
+  }
+
+  &:not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+  }
 }
 
 @media (max-width: 840px) {
   .main-find-donors {
-    display: block;
+    display: flex;
   }
   .main-find-donors .left {
     border: none;
-    width: 100%;
+    width: 400px;
     margin: 20px 0;
   }
   .main-find-donors .right {
@@ -116,21 +146,20 @@
 }
 @media (max-width: 700px) {
   .main-find-donors {
-    display: block;
+    display: flex;
   }
   .main-find-donors .left {
     margin: 20px 5px;
     border: none;
-    width: 100%;
+    width: 400px;
   }
 }
 @media (max-width: 425px) {
   .main-find-donors {
-    display: block;
-    width: 100%;
+    display: flex;
   }
   .main-find-donors .left {
-    width: 100%;
+    width: 350px;
   }
   .main-find-donors .right {
     width: 100%;
@@ -140,12 +169,11 @@
   }
 }
 
-@media (max-width: 325px) {
+@media (max-width: 360px) {
   .main-find-donors {
-    display: block;
-    width: 100%;
+    display: flex;
   }
   .main-find-donors .left {
-    width: 100%;
+    width: 300px;
   }
 }

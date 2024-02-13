@@ -1,4 +1,6 @@
-img {
-  /* border-radius: 50px; */
-  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+.carousel-img {
+  & img {
+    /* border-radius: 50px; */
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+  }
 }

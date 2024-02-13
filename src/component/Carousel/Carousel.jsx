@@ -8,7 +8,7 @@ import fact4 from "./fact_4.jpg";
 
 export default function Carousels() {
   return (
-    <div>
+    <div className="carousel-img">
       <Carousel infiniteLoop autoPlay interval={1200} centerMode>
         <img src={fact1} alt="" />
         <img src={fact2} alt="" />
