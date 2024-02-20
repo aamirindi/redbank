@@ -133,6 +133,7 @@ function Update_User() {
             contentStyle={{
               width: "300px",
               maxWidth: "500px",
+              // backgroundColor: "#d4d4d4",
             }}>
             {(close) => {
               closePopup = close;

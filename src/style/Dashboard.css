@@ -9,16 +9,11 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border-top: 2px solid #dadada;
+  border-top: 2px solid #1f1f1f;
   border-top-left-radius: 5vw;
   border-top-right-radius: 5vw;
   font-family: "Poppins";
-  background: rgb(255, 124, 124);
-  background: linear-gradient(
-    204deg,
-    rgba(255, 124, 124, 1) 0%,
-    rgba(255, 255, 255, 1) 40%
-  );
+  background: #ffff;
 }
 .content .left {
   text-align: left;
@@ -36,7 +31,7 @@
 }
 .content .left p span {
   text-transform: uppercase;
-  color: crimson;
+  color: #a80000;
 }
 
 .content .right {

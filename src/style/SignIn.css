@@ -6,13 +6,7 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  background: rgb(255, 198, 124);
-  background: rgb(255, 124, 124);
-  background: linear-gradient(
-    360deg,
-    rgba(255, 124, 124, 1) 0%,
-    rgba(255, 255, 255, 1) 40%
-  );
+  background: #eaeaea;
   .sign-in {
     display: flex;
     justify-content: center;
@@ -25,7 +19,7 @@
       position: absolute;
       top: 5vh;
       & span {
-        color: crimson;
+        color: #a80000;
       }
     }
   }
@@ -39,11 +33,11 @@
 .btn {
   text-decoration: none;
   appearance: button;
-  background-color: black;
+  background-color: #a80000;
   background-image: none;
   border: 1px solid #000;
   border-radius: 4px;
-  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-shadow: #1f1f1f 4px 4px 0 0, #000 4px 4px 0 1px;
   box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
@@ -76,7 +70,7 @@
   }
 
   &:not([disabled]):active {
-    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    box-shadow: #1f1f1f 2px 2px 0 0, #000 2px 2px 0 1px;
     transform: translate(2px, 2px);
   }
 }

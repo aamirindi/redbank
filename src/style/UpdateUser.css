@@ -6,16 +6,10 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  border-top: 2px solid #dadada;
+  border-top: 2px solid #1f1f1f;
   border-top-left-radius: 5vw;
   border-top-right-radius: 5vw;
   font-family: "Poppins";
-  background: rgb(255, 124, 124);
-  background: linear-gradient(
-    204deg,
-    rgba(255, 124, 124, 1) 0%,
-    rgba(255, 255, 255, 1) 40%
-  );
   & h1 {
     text-transform: uppercase;
     font-size: 2.5rem;
@@ -27,12 +21,12 @@
   }
 
   & .user-data {
+    background-color: #eaeaea;
     width: 500px;
     max-width: 300px;
     margin-top: 50px;
     padding: 10px 30px;
-    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.08);
     & ul {
       & li {
         display: flex;
@@ -165,6 +159,7 @@
   font-size: 1.5rem;
   text-align: center;
   padding: 5px;
+  color: #1f1f1f;
 }
 .modal > .content-edit {
   display: flex;
@@ -212,16 +207,16 @@
       justify-content: center;
       align-items: center;
       & input {
+        /* background-color: #d4d4d4; */
         font-size: 1rem;
         width: 100%;
         text-align: center;
         appearance: none;
         outline: none;
-        border-bottom: 2px solid #e91e63;
-        background: rgba(#e91e63, 0.2);
-        border-radius: 10px;
+        border-bottom: 2px solid #a80000;
         padding: 0.4em;
-        color: black;
+        color: #731010;
+        font-weight: 400;
 
         &::placeholder {
           font-family: "Poppins";
@@ -246,7 +241,7 @@
         background-color: #fff;
       }
       & label {
-        color: crimson;
+        color: #a80000;
         font-weight: 600;
       }
     }
@@ -264,7 +259,7 @@
         background-color: #fff;
       }
       & label {
-        color: crimson;
+        color: #a80000;
         font-weight: 600;
       }
     }

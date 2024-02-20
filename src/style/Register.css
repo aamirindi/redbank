@@ -8,12 +8,7 @@
   height: 100vh;
   margin: 0;
   font-family: "Poppins";
-  background: rgb(255, 124, 124);
-  background: linear-gradient(
-    204deg,
-    rgba(255, 124, 124, 1) 0%,
-    rgba(255, 255, 255, 1) 40%
-  );
+  background: #eaeaea;
 }
 .register .left {
   display: flex;
@@ -37,9 +32,10 @@
   justify-content: space-between;
 }
 .register .left .input-group input {
+  background-color: #eaeaea;
   font-size: 1rem;
   border: none;
-  border-bottom: 1px solid lightslategray;
+  border-bottom: 2px solid #a80000;
   width: 100%;
   font-weight: 300;
   padding: 8px;
@@ -47,7 +43,6 @@
 .register .left .input-group input::placeholder {
   font-family: "Poppins";
   font-size: 1rem;
-  color: black;
 }
 .register .left .input-group input:focus {
   outline: none;
@@ -72,6 +67,9 @@
   display: flex;
   flex-direction: column;
 }
+.register .left .radio-group .duo label {
+  /* color: #a80000; */
+}
 .register .left .radio-group label {
   font-family: "Poppins";
   font-size: 1rem;
@@ -80,6 +78,9 @@
 }
 .register .left .radio-group > * {
   padding: 0 10px;
+}
+.register .left .radio-group div {
+  /* color: #a80000; */
 }
 .register .left .button button {
   width: 100%;
@@ -139,6 +140,7 @@
 @media (max-width: 840px) {
   .register {
     display: block;
+    height: 100%;
   }
   .register .left {
     margin-left: auto;
