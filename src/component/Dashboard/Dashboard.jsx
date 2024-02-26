@@ -38,7 +38,7 @@ export default function Dashboard({ isAuth, setIsAuth }) {
           <h4 className="heartbeat">
             <span>Blood</span> Facts
           </h4>
-          <div className="carousel ">
+          <div className="card-container">
             <Carousels />
           </div>
         </div>
@@ -53,10 +53,14 @@ export default function Dashboard({ isAuth, setIsAuth }) {
           <p>Blood donation form</p>
         </Link>
       </div>
-      <Link to="/allrequests" className="all_requests animation slide_up ">
-        All Requests
-        <p>Live Requests All Over India</p>
-      </Link>
+      <div className="all-request-container">
+        <div className="all-request-container-2">
+          <Link to="/allrequests" className="all_requests animation slide_up ">
+            All Requests
+            <p>Live Requests All Over India</p>
+          </Link>
+        </div>
+      </div>
       <Footer />
     </>
   );

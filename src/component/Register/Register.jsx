@@ -4,7 +4,7 @@ import { getAuth } from "firebase/auth";
 import { db } from "../../Firebase";
 import { collection, addDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
-import bg from "../Register/1_KJACFKJ0GKtnhgR7OmlPFA.gif";
+import bg from "../Register/image_processing20211206-11342-1yapvpw.gif";
 import useAnimation from "../../hooks/useAnimation";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -79,237 +79,112 @@ function Register({ isAuth }) {
       <div className="right animation slide_right">
         <img src={bg} alt="" />
       </div>
-      <form onSubmit={submitHandler} className="left animation slide_left">
-        <div className="header">
-          <h1>Enter your details,</h1>
-          <p>Sign up to get Started!</p>
-        </div>
-        <div className="input-group">
-          <input
-            value={formData.name}
-            onChange={handleChange}
-            type="text"
-            name="name"
-            placeholder="Full Name"
-            required
-          />
-        </div>
-        <div className="input-group">
-          <input
-            value={formData.phonenumber}
-            onChange={handleChange}
-            type="number"
-            name="phonenumber"
-            placeholder="Phone Number"
-            required
-          />
-        </div>
-        <div className="input-group">
-          <label htmlFor="dob" className="dob">
-            Date of birth:
-          </label>
-          <input
-            className="dob"
-            value={formData.dob}
-            onChange={handleChange}
-            type="date"
-            name="dob"
-            id="dob"
-            required
-          />
-        </div>
-        <div className="radio-group">
-          <label>Select Blood Group:</label>
-          <div className="duo">
-            <div>
-              <input
-                type="radio"
-                id="A+"
-                name="bloodgroup"
-                value="A+"
-                checked={formData.bloodgroup === "A+"}
-                onChange={handleChange}
-                required
-              />
-              <label htmlFor="A+">A+</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                id="A-"
-                name="bloodgroup"
-                value="A-"
-                checked={formData.bloodgroup === "A-"}
-                onChange={handleChange}
-                required
-              />
-              <label htmlFor="A-">A-</label>
-            </div>
+      <div className="left">
+        <form onSubmit={submitHandler} className="animation slide_left">
+          <div className="header">
+            <h1>Enter your details,</h1>
+            <p>Sign up to get Started!</p>
           </div>
-          <div className="duo">
-            <div>
-              <input
-                type="radio"
-                id="B+"
-                name="bloodgroup"
-                value="B+"
-                checked={formData.bloodgroup === "B+"}
-                onChange={handleChange}
-                required
-              />
-              <label htmlFor="B+">B+</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                id="B-"
-                name="bloodgroup"
-                value="B-"
-                checked={formData.bloodgroup === "B-"}
-                onChange={handleChange}
-                required
-              />
-              <label htmlFor="B-">B-</label>
-            </div>
-          </div>
-          <div className="duo">
-            <div>
-              <input
-                type="radio"
-                id="O+"
-                name="bloodgroup"
-                value="O+"
-                checked={formData.bloodgroup === "O+"}
-                onChange={handleChange}
-                required
-              />
-              <label htmlFor="O+">O+</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                id="O-"
-                name="bloodgroup"
-                value="O-"
-                checked={formData.bloodgroup === "O-"}
-                onChange={handleChange}
-                required
-              />
-              <label htmlFor="O-">O-</label>
-            </div>
-          </div>
-          <div className="duo">
-            <div>
-              <input
-                type="radio"
-                id="AB+"
-                name="bloodgroup"
-                value="AB+"
-                checked={formData.bloodgroup === "AB+"}
-                onChange={handleChange}
-                required
-              />
-              <label htmlFor="AB+">AB+</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                id="AB-"
-                name="bloodgroup"
-                value="AB-"
-                checked={formData.bloodgroup === "AB-"}
-                onChange={handleChange}
-                required
-              />
-              <label htmlFor="AB-">AB-</label>
-            </div>
-          </div>
-        </div>
-        <div className="radio-group">
-          <label>Select Gender:</label>
-          <div>
+
+          <div className="input-group">
             <input
-              type="radio"
-              id="Male"
+              value={formData.name}
+              onChange={handleChange}
+              type="text"
+              name="name"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+          <div className="input-group">
+            <input
+              value={formData.phonenumber}
+              onChange={handleChange}
+              type="number"
+              name="phonenumber"
+              placeholder="Phone Number"
+              required
+            />
+          </div>
+          <div className="input-group">
+            <label htmlFor="dob" className="dob">
+              Date of birth:
+            </label>
+            <input
+              className="input-dob"
+              value={formData.dob}
+              onChange={handleChange}
+              type="date"
+              name="dob"
+              id="dob"
+              required
+            />
+          </div>
+          <div className="radio-group">
+            <label htmlFor="bloodgroup">Select Blood Group:</label>
+            <select
+              id="bloodgroup"
+              name="bloodgroup"
+              value={formData.bloodgroup}
+              onChange={handleChange}
+              required>
+              <option value="">Select</option>
+              <option value="A+">A+</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+            </select>
+          </div>
+          <div className="radio-group">
+            <label htmlFor="gender">Select Gender:</label>
+            <select
+              id="gender"
               name="gender"
-              value="Male"
-              checked={formData.gender === "Male"}
+              value={formData.gender}
               onChange={handleChange}
-              required
-            />
-            <label htmlFor="Male">Male</label>
+              required>
+              <option value="">Select</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
           </div>
-          <div>
-            <input
-              type="radio"
-              id="Female"
-              name="gender"
-              value="Female"
-              checked={formData.gender === "Female"}
-              onChange={handleChange}
-              required
-            />
-            <label htmlFor="Female">Female</label>
-          </div>
-        </div>
-        <div className="radio-group">
-          <label>Interested in donating Blood?</label>
-          <div>
-            <input
-              type="radio"
-              id="YesDonation"
+          <div className="radio-group">
+            <label htmlFor="bloodDonation">Interested in donating Blood?</label>
+            <select
+              id="bloodDonation"
               name="bloodDonation"
-              value="Yes"
-              checked={formData.bloodDonation === "Yes"}
+              value={formData.bloodDonation}
               onChange={handleChange}
-              required
-            />
-            <label htmlFor="YesDonation">Yes</label>
+              required>
+              <option value="">Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
           </div>
-          <div>
-            <input
-              type="radio"
-              id="NoDonation"
-              name="bloodDonation"
-              value="No"
-              checked={formData.bloodDonation === "No"}
-              onChange={handleChange}
-              required
-            />
-            <label htmlFor="NoDonation">No</label>
-          </div>
-        </div>
-        <div className="radio-group">
-          <label>Covid Recovered? (for plasma donation)</label>
-          <div>
-            <input
-              type="radio"
-              id="YesRecovered"
+          <div className="radio-group">
+            <label htmlFor="recovered">
+              Covid Recovered? (for plasma donation)
+            </label>
+            <select
+              id="recovered"
               name="recovered"
-              value="Yes"
-              checked={formData.recovered === "Yes"}
+              value={formData.recovered}
               onChange={handleChange}
-              required
-            />
-            <label htmlFor="YesRecovered">Yes</label>
+              required>
+              <option value="">Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
           </div>
-          <div>
-            <input
-              type="radio"
-              id="NoRecovered"
-              name="recovered"
-              value="No"
-              checked={formData.recovered === "No"}
-              onChange={handleChange}
-              required
-            />
-            <label htmlFor="NoRecovered">No</label>
+          <div className="button">
+            <button>Submit</button>
           </div>
-        </div>
-        <div className="button">
-          <button>Submit</button>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   );
 }

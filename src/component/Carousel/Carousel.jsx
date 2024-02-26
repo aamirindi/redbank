@@ -1,21 +1,52 @@
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "../../style/Carousel.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
-import fact1 from "./fact_1.jpg";
-import fact2 from "./fact_2.jpg";
-import fact3 from "./fact_3.jpg";
-import fact4 from "./fact_4.jpg";
 
-export default function Carousels() {
+export default function Carousel() {
+  const data = [
+    {
+      content:
+        "Every year our nation requires about 5 Crore units of blood, out of which only a meager 2.5 Crore units of blood are available.",
+    },
+    {
+      content:
+        "The gift of blood is the gift of life. There is no substitute for human blood.",
+    },
+    {
+      content: "Every two seconds someone needs blood.",
+    },
+    {
+      content:
+        "The average adult has about 10 pints of blood, but a typical whole-blood donation is only 1 pint.",
+    },
+  ];
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
+
   return (
-    <div className="carousel-img">
-      <Carousel infiniteLoop autoPlay interval={1200} centerMode>
-        <img src={fact1} alt="" />
-        <img src={fact2} alt="" />
-        <img src={fact3} alt="" />
-        <img src={fact4} alt="" />
-        <img src={fact2} alt="" />
-      </Carousel>
+    <div className="slider">
+      <div>
+        <Slider {...settings}>
+          {data.map((d, index) => (
+            <div
+              key={index}
+              className="card-carousel  text-black shadow-lg rounded-xl">
+              <h2>Blood need</h2>
+              <p>{d.content}</p>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 }

@@ -5,6 +5,7 @@ import { signInWithPopup } from "firebase/auth";
 import useAnimation from "../../hooks/useAnimation";
 import { db, auth, provider } from "../../Firebase";
 import { collection, getDocs, where, query } from "firebase/firestore";
+import googleLogo from "./image8-2.jpg";
 
 // eslint-disable-next-line react/prop-types
 export default function SignIn({ setIsAuth }) {
@@ -54,7 +55,8 @@ export default function SignIn({ setIsAuth }) {
         />
 
         <button className="btn animation slide_up" onClick={googleClick}>
-          SignIn using Google
+          <img src={googleLogo} alt="" width="17%" />
+          <p>Sign Up with Google</p>
         </button>
       </div>
     </div>

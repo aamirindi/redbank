@@ -6,7 +6,6 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  background: #eaeaea;
   .sign-in {
     display: flex;
     justify-content: center;
@@ -17,6 +16,7 @@
       font-family: "Poppins";
       font-size: 3rem;
       position: absolute;
+      color: white;
       top: 5vh;
       & span {
         color: #a80000;
@@ -31,21 +31,19 @@
 }
 
 .btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   text-decoration: none;
-  appearance: button;
-  background-color: #a80000;
-  background-image: none;
-  border: 1px solid #000;
+  background-color: #4285f4;
   border-radius: 4px;
-  box-shadow: #1f1f1f 4px 4px 0 0, #000 4px 4px 0 1px;
-  box-sizing: border-box;
+  box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.3);
+  font-family: "Poppins";
+  width: 300px;
   cursor: pointer;
-  display: inline-block;
-  font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
   font-size: 20px;
-  font-weight: 400;
   overflow: visible;
-  padding: 10px 20px;
+  padding: 3px;
   text-align: center;
   line-height: 30px;
   text-transform: none;
@@ -55,6 +53,7 @@
   vertical-align: middle;
   white-space: nowrap;
   color: white;
+  border: none;
 
   &:focus {
     text-decoration: none;
@@ -70,7 +69,16 @@
   }
 
   &:not([disabled]):active {
-    box-shadow: #1f1f1f 2px 2px 0 0, #000 2px 2px 0 1px;
+    box-shadow: white 2px 2px 0 0;
     transform: translate(2px, 2px);
+  }
+
+  & img {
+    border-radius: 3px;
+    padding: 0;
+    /* border: 1px solid black; */
+  }
+  & p {
+    /* border: 1px solid black; */
   }
 }

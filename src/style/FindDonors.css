@@ -4,13 +4,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 2px solid #dadada;
+  border-top: 2px solid crimson;
   border-top-left-radius: 5vw;
   border-top-right-radius: 5vw;
   font-family: "Poppins";
+  background-color: #e9e9e9;
 }
 .main-find-donors .left {
-  background-color: #eaeaea;
+  background-color: white;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
@@ -36,7 +37,6 @@
   padding: 9px;
 }
 .main-find-donors .left .input-group input {
-  background-color: #eaeaea;
   font-size: 1rem;
   border: none;
   border-bottom: 1px solid lightslategray;

@@ -6,10 +6,13 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  border-top: 2px solid #1f1f1f;
+  border-top: 2px solid crimson;
   border-top-left-radius: 5vw;
   border-top-right-radius: 5vw;
   font-family: "Poppins";
+  background-color: #e9e9e9;
+  height: 88vh;
+
   & h1 {
     text-transform: uppercase;
     font-size: 2.5rem;
@@ -21,7 +24,7 @@
   }
 
   & .user-data {
-    background-color: #eaeaea;
+    background-color: #ffff;
     width: 500px;
     max-width: 300px;
     margin-top: 50px;
