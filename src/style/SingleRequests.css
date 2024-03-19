@@ -6,10 +6,9 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  border-top: 2px solid crimson;
+  border-top: 1px solid #f0525d;
   border-top-left-radius: 5vw;
   border-top-right-radius: 5vw;
-  background-color: #e9e9e9;
 }
 .single-requests-container .header h1 {
   font-family: "Poppins";
@@ -55,7 +54,7 @@
   text-transform: uppercase;
 }
 .single-requests-container .card__title span {
-  color: crimson;
+  color: #f0525d;
   font-weight: 600;
 }
 .single-requests-container .card__text {
@@ -75,7 +74,7 @@
   background-color: darkgray;
 }
 .single-requests-container .btn-all-req:hover {
-  background-color: crimson;
+  background-color: #f0525d;
   color: white;
 }
 @media (max-width: 600px) {
