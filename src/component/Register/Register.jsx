@@ -4,7 +4,7 @@ import { getAuth } from "firebase/auth";
 import { db } from "../../Firebase";
 import { collection, addDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
-import bg from "../Register/image_processing20211206-11342-1yapvpw.gif";
+import bg from "../../../public/assets/giphy.gif";
 import useAnimation from "../../hooks/useAnimation";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

@@ -21,10 +21,9 @@
 
   & form {
     width: 90%;
-    /* border: 1px solid #b4b4b4; */
     padding: 30px;
     border-radius: 3px;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.1);
     background-color: white;
   }
 }
@@ -33,7 +32,6 @@
   font-size: clamp(1rem, 0.7714rem + 1.1429vw, 1.8rem);
   font-family: "Poppins";
   padding-bottom: 15px;
-  border-bottom: 2px solid #202020;
 }
 .register .left .header p {
   font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
@@ -48,8 +46,8 @@
 .register .left .input-group input {
   /* background-color: #eaeaea; */
   font-size: 1rem;
-  border: 1px solid black;
-  border-left: 2px solid crimson;
+  border: 1px solid #fce7e2;
+  border-left: 2px solid #f0525d;
   width: 100%;
   font-weight: 300;
   padding: 8px;
@@ -109,7 +107,8 @@
   display: flex;
   justify-content: center;
   margin: 0;
-  border-left: 2px solid crimson;
+  border: 1px solid #fce7e2;
+  border-left: 2px solid #f0525d;
   width: 200px;
   box-sizing: 10px;
   padding: 5px 8px;
@@ -119,59 +118,39 @@
 }
 .register .left .button button {
   width: 100%;
-  text-decoration: none;
-  appearance: button;
-  background-color: black;
+  background-color: #fce7e2;
   background-image: none;
-  border: 1px solid #000;
+  border: 1px solid #f0525d;
   border-radius: 4px;
-  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
   box-sizing: border-box;
   cursor: pointer;
-  display: inline-block;
-  font-family: "Poppins";
   font-size: 20px;
   font-weight: 400;
-  overflow: visible;
-  padding: 5px 10px;
+  padding: 10px 20px;
   text-align: center;
-  line-height: 30px;
-  margin: 10px 0;
   text-transform: none;
   touch-action: manipulation;
   user-select: none;
   -webkit-user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  color: white;
-
-  &:focus {
-    text-decoration: none;
-  }
-
+  margin-top: 10px;
+  color: black;
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s ease-in-out;
   &:hover {
-    text-decoration: none;
-  }
-
-  &:active {
-    box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
-    outline: 0;
-  }
-
-  &:not([disabled]):active {
-    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
-    transform: translate(2px, 2px);
+    background-color: #f0525d;
+    color: white;
+    box-shadow: none;
   }
 }
 .register .right {
-  padding: 20px;
-  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .register .right img {
-  z-index: 2;
-  width: 100%;
-  border-radius: 20%;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  width: 80%;
 }
 
 @media (max-width: 840px) {
