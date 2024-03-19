@@ -1,8 +1,27 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:wght@500;800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins&family=Roboto:wght@100&family=Source+Serif+4:opsz,wght@8..60,300&family=Ubuntu:wght@300&display=swap");
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #202020;
+  font-family: "Poppins";
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f0525d;
+  border-radius: 5px;
+}
+
+::-moz-scrollbar {
+  width: 10px;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #f0525d;
 }
 
 .animate {

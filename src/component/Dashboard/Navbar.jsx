@@ -46,6 +46,13 @@ export default function Navbar() {
   }, [users]);
 
   const logOut = () => {
+    const confirmLogout = window.confirm("Are you sure you want to log out?");
+    if (confirmLogout) {
+      handleLogout();
+    }
+  };
+
+  const handleLogout = () => {
     signOut(auth).then(() => {
       localStorage.clear();
       navigate("/");
@@ -62,7 +69,7 @@ export default function Navbar() {
           {location.pathname !== "/dashboard" && <></>}
           {location.pathname === "/dashboard" && (
             <Link to={`/updateuser/${url}`} className="nav-btn-update">
-              Update User
+              Update
             </Link>
           )}
 
@@ -74,7 +81,7 @@ export default function Navbar() {
 
           {location.pathname === "/dashboard" && (
             <button className="nav-btn-out" onClick={logOut}>
-              Sign Out
+              Log Out
             </button>
           )}
         </div>

@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
+import dash from "../../../public/assets/giphy (1).gif";
 
 // eslint-disable-next-line react/prop-types
 export default function Dashboard({ isAuth, setIsAuth }) {
@@ -29,10 +30,15 @@ export default function Dashboard({ isAuth, setIsAuth }) {
       <Navbar setIsAuth={setIsAuth} />
       <div className="content">
         <div className="left animation fade_in">
-          <h2>Hey {auth.currentUser?.displayName},</h2>
-          <p>
-            Looking for <span>Blood</span>?
-          </p>
+          <div className="header-dash">
+            <h2>Hey {auth.currentUser?.displayName},</h2>
+            <p>
+              Looking for <span>Blood</span>?
+            </p>
+          </div>
+          <div className="dash-img">
+            <img src={dash} alt="" width="60%" />
+          </div>
         </div>
         <div className="right animation slide_right ">
           <h4 className="heartbeat">

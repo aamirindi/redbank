@@ -1,11 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Inter:wght@500;800&family=Poppins&family=Roboto:wght@100&family=Source+Serif+4:opsz,wght@8..60,300&family=Ubuntu:wght@300&display=swap");
 
 .centered-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
+  display: block;
+  margin-top: 50px;
   .sign-in {
     display: flex;
     justify-content: center;
@@ -13,13 +10,9 @@
     align-items: center;
 
     & h1 {
-      font-family: "Poppins";
       font-size: 3rem;
-      position: absolute;
-      color: white;
-      top: 5vh;
       & span {
-        color: #a80000;
+        color: #f0525d;
       }
     }
   }
@@ -28,6 +21,7 @@
 .centered-image {
   max-width: 100%;
   height: auto;
+  user-select: none;
 }
 
 .btn {
@@ -35,14 +29,13 @@
   align-items: center;
   gap: 1rem;
   text-decoration: none;
-  background-color: #4285f4;
+  background: #3b7ded;
   border-radius: 4px;
-  box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.3);
-  font-family: "Poppins";
+  box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.3);
   width: 300px;
   cursor: pointer;
-  font-size: 20px;
-  overflow: visible;
+  font-family: "Poppins";
+  font-size: 1.3rem;
   padding: 3px;
   text-align: center;
   line-height: 30px;
@@ -54,6 +47,7 @@
   white-space: nowrap;
   color: white;
   border: none;
+  margin-top: 10px;
 
   &:focus {
     text-decoration: none;
